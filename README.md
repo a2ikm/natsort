@@ -40,6 +40,29 @@ or
     ]
 ```
 
+These sorts are case sensitive by default.
+If you want to sort objects in case insensitive, pass `false` to the methods.
+
+```ruby
+%w(B a c).natsort(false)
+#=> ["a", "B", "c"]
+```
+
+or
+
+```ruby
+[
+  { "n" => "B" },
+  { "n" => "a" },
+  { "n" => "c" }
+].natsort_by(false) { |x| x["n"] }
+#=> [
+      { "n" => "a" },
+      { "n" => "B" },
+      { "n" => "c" }
+    ]
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/a2ikm/natsort/fork )
