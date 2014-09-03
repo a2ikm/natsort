@@ -10,3 +10,13 @@ module Enumerable
     sort { |a, b| Natcmp.natcmp(block.call(a).to_s, block.call(b).to_s) }
   end
 end
+
+class Array
+  def natsort!
+    replace(natsort)
+  end
+
+  def natsort_by!(&block)
+    replace(natsort_by(&block))
+  end
+end
