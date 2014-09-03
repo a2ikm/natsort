@@ -23,6 +23,21 @@ Or install it yourself as:
 #=> ["1", "2", "10"]
 ```
 
+or
+
+```ruby
+[
+  { "n" => "1" },
+  { "n" => "10" },
+  { "n" => "2" }
+].natsort_by { |x| x["n"] }
+#=> [
+      { "n" => "1" },
+      { "n" => "2" },
+      { "n" => "10" }
+    ]
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/a2ikm/natsort/fork )
