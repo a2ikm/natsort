@@ -1,5 +1,8 @@
 require "natsort/version"
+require "natcmp"
 
-module Natsort
-  # Your code goes here...
+module Enumerable
+  def natsort
+    sort { |a, b| Natcmp.natcmp(a.to_s, b.to_s) }
+  end
 end
