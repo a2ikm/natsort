@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/a2ikm/natsort.svg)](https://travis-ci.org/a2ikm/natsort)
+
 # natsort
 
 This gem provides natural sorting methods to `Enumerable`.
