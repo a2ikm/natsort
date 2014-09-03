@@ -1,6 +1,6 @@
 # natsort
 
-This gem provides naturally sorting methods to `Enumerable`.
+This gem provides natural sorting methods to `Enumerable`.
 
 ## Installation
 

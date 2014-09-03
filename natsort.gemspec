@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Natsort::VERSION
   spec.authors       = ["Masato Ikeda"]
   spec.email         = ["masato.ikeda@gmail.com"]
-  spec.summary       = %q{Provides naturally sorting methods to Enumerable.}
-  spec.description   = %q{Provides naturally sorting methods to Enumerable.}
+  spec.summary       = %q{Provides natural sorting methods to Enumerable.}
+  spec.description   = %q{Provides natural sorting methods to Enumerable.}
   spec.homepage      = "https://github.com/a2ikm/natsort"
   spec.license       = "MIT"
 
