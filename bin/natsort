@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "natsort"
+
+ARGF.natsort.each do |line|
+  puts line
+end
