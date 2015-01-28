@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require "natsort"
+require "optparse"
+
+options = {
+  :case_sensitive => true,
+}
+
+OptionParser.new do |op|
+  op.banner = "Usage: natsort [<options>] <arg> [<arg>...]"
+  op.on("-i", "--ignore-case") { |v| options[:case_sensitive] = !v }
+end.parse!(ARGV)
+
+ARGF.natsort(options[:case_sensitive]).each do |line|
+  puts line
+end
